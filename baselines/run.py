@@ -24,10 +24,10 @@ try:
 except ImportError:
     pybullet_envs = None
 
-try:
-    import roboschool
-except ImportError:
-    roboschool = None
+# try:
+#     import roboschool
+# except ImportError:
+#     roboschool = None
 
 _game_envs = defaultdict(set)
 for env in gym.envs.registry.all():
